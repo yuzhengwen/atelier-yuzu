@@ -22,7 +22,7 @@ export default function TagsInput({
   return (
     <div>
       <label htmlFor="tags" className="block text-sm font-medium mb-2">
-        Tags
+        Tags <span className="text-xs text-gray-500">(optional)</span>
       </label>
       <div className="flex gap-2 mb-2">
         <input

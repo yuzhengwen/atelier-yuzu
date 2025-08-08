@@ -104,9 +104,6 @@ export default function Upload() {
 
             {/* Tags Section */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Tags
-              </label>
               <TagsInput
                 tagsInput={formData.tagsInput}
                 tags={formData.tags}
@@ -119,9 +116,6 @@ export default function Upload() {
 
             {/* Additional Images Section */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Additional Images (Optional)
-              </label>
               <AdditionalImages
                 additionalImages={formData.additionalImages || []}
                 onImagesChange={handleAdditionalImagesChange}

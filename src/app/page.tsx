@@ -10,9 +10,7 @@ export default function Home() {
             Welcome to Atelier Yuzu
           </h1>
           <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Discover exceptional digital artwork from talented artists around
-            the world. Share your own creations and connect with a vibrant
-            creative community.
+            Browse my art portfolio
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -93,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+      {/* <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Share Your Art?
@@ -109,7 +107,7 @@ export default function Home() {
             Get Started
           </Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

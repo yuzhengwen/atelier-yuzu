@@ -26,7 +26,7 @@ export default function AdditionalImages({
     <div>
       <label className="block text-sm font-medium mb-2">
         Additional Images{" "}
-        <span className="text-xs text-gray-500">(optional, max 5)</span>
+        <span className="text-xs text-gray-500">(optional, max 10)</span>
       </label>
       <MyDropzone
         onFilesChange={onImagesChange}
@@ -34,7 +34,7 @@ export default function AdditionalImages({
         accept={{
           "image/*": [".jpeg", ".jpg", ".png", ".gif", ".webp"],
         }}
-        maxFiles={5}
+        maxFiles={10}
         multiple={true}
         placeholder="Drag & drop additional images here"
         showFileList={false}
