@@ -4,9 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { authClient, signInGithub, signOut } from "@/lib/auth-client";
+import { signInGithub, signOut } from "@/lib/auth-client";
 import { User } from "better-auth";
-import { session } from "../../auth-schema";
 import { useRouter } from "next/navigation";
 
 type NavbarClientProps = {
