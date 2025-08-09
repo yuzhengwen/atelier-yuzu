@@ -1,9 +1,11 @@
 import { createAuthClient } from "better-auth/client";
 
-export const authClient = createAuthClient({
-  /** The base URL of the server (optional if you're using the same domain) */
-  baseURL: "http://localhost:3000",
-});
+export const authClient = createAuthClient(
+  // {
+  // /** The base URL of the server (optional if you're using the same domain) */
+  // baseURL: process.env.BASE_URL,
+  // }
+);
 
 export const signInGithub = async () => {
   await authClient.signIn.social({
