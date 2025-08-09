@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Atelier Yuzu Gallery",
-  description: "Digital art gallery and artwork submission platform",
+  description: "A personal art gallery",
 };
 
 export default function RootLayout({

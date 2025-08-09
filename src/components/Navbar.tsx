@@ -12,7 +12,9 @@ export default async function Navbar() {
     { name: "About", href: "/about" },
     { name: "Upload", href: "/upload" },
   ];
-  console.log(session);
+  console.log(
+    session ? `Session found: ${session.user.name}` : "No session found"
+  );
 
   return <NavbarClient navItems={navItems} user={session?.user} />;
 }

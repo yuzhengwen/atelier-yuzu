@@ -20,7 +20,8 @@ export default function NavbarClient({ navItems, user }: NavbarClientProps) {
     try {
       await signOut();
       console.log("Signed out successfully");
-      router.refresh();
+      router.push("/"); 
+      router.refresh(); // Refresh the page to update user state
     } catch (error) {
       console.error("Sign out failed:", error);
     }
@@ -29,7 +30,6 @@ export default function NavbarClient({ navItems, user }: NavbarClientProps) {
   const pathname = usePathname();
 
   const isActive = (href: string) => pathname === href;
-  console.log(user);
 
   return (
     <nav className="bg-white shadow-lg border-b">
